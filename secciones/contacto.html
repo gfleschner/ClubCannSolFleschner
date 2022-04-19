@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- link a css -->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!-- links de fuente header -->
+    <!-- link fuente header -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    <!-- link fuente menu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
 
     <!-- link fuente main y footer -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,75 +81,40 @@
             <h3>
                 Por cualquier consulta o para recibir la informacion de como asociarte llena el siguiente formulario y te responderemos a la brevedad
             </h3>
+
+            <div class="mb-3">
+                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+            </div>
     
-            <form action="">
-                <fieldset>
-                    <legend>
-                        Contactanos
-                    </legend>
-        
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" placeholder="escribilo aca">
-                    </div>
-        
-                    <div>
-                        <label for="">
-                            Email:
-                        </label>
-                        <input type="email" name="email" placeholder="escribilo aca">
-                    </div>
-        
-                    <div>
-                        <label for="Pais">
-                            De donde sos?
-                        </label>
-                        <select name="Pais" id="">
-                            <option value="-">-Selecciona tu pais-</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="brasil">Brasil</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="peru">Peru</option>
-                            <option value="chile">Chile</option>
-                            <option value="bolivia">Bolivia</option>
-                            <option value="venezuela">Venezuela</option>
-                            <option value="ecuador">Ecuador</option>
-                            <option value="paraguay">Paraguay</option>
-                        </select>
-                    </div>
-    
-                    <div>
-                        <label for="Edad">
-                            Edad
-                        </label>
-                        <br>
-                        <input type="radio" name="edad" value="18-21"> 18 - 21 <br>
-                        <input type="radio" name="edad" value="22-26"> 22 - 26 <br>
-                        <input type="radio" name="edad" value="27-34"> 27 - 34 <br>
-                        <input type="radio" name="edad" value="35-50"> 35 - 50 <br>
-                        <input type="radio" name="edad" value="+50"> Mas de 50 <br>
-                        
-                    </div>
-        
-                    <div>
-                        <label for="Genero">
-                            Genero
-                        </label>
-                        <br>
-                        <input type="radio" name="genero" value="hombre"> Hombre <br>
-                        <input type="radio" name="genero" value="mujer"> Mujer <br>
-                        <input type="radio" name="genero" value="otro"> Otro
-                        <input type="text" name="genero" placeholder="Cual?">
-                    </div>
-        
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar todo">
-                    </div>
-        
-                </fieldset>
-            </form> 
+            <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                <option selected>De donde nos contactas?</option>
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="brasil">Brasil</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Peru</option>
+                <option value="chile">Chile</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="paraguay">Paraguay</option>
+              </select>
+              
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Que edad tenes?</option>
+                <option value="18-21">18 a 21</option>
+                <option value="22-26">22 a 26</option>
+                <option value="27-34">27 a 34</option>
+                <option value="35-50">35 a 50</option>
+                <option value="+50">Mas de 50</option>
+              </select>
+
+              <div class="mb-3">
+                
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Por que nos contactas?"></textarea>
+              </div>
 
         </section>                          
               
@@ -177,7 +150,10 @@
         
     </footer>
 
-    </div>    
+    </div>
+    
+    <!-- link de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>
 </html>

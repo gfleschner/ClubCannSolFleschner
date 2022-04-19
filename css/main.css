@@ -6,7 +6,9 @@
 }
 
 .contenedor{
-    height: 100vh;
+    background: rgb(122,232,110);
+    background: linear-gradient(180deg, rgba(122,232,110,0.9864320728291317) 0%, rgba(144,222,138,1) 35%, rgba(182,246,158,0.9724264705882353) 100%);
+    height: 100%;
     display: grid;
     grid-template-areas: "header header"
                          "main main"
@@ -15,8 +17,7 @@
 }
 
 .header{
-    grid-area: header;    
-    background-color: #9DDE24;
+    grid-area: header;  
     text-align: center;
     padding: 1.2rem 1.9rem;
     color: black;
@@ -25,33 +26,22 @@
 
 }
 
-h1{
-    border-bottom: 0.2rem solid #584502;
-}
+
 
 .main{
-    grid-area: main;
-    background-color: #9DDE24;
+    grid-area: main;  
 
-    /* imagen de fondo index.
-    background-image: url(/multimedia/fondoHome.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */    
-    
 }
 
 .menu{
-    padding: 0.5rem 0.6rem;    
+    padding: 0.4rem 0.6rem;    
     position: sticky;
+    border-bottom: solid 0.1rem whitesmoke;
     top: 0;    
-    text-align: center;            
-    background-color: #5DA902;    
-    border: 0.1rem solid black;
-    font-size: 1rem;
-    font-family: 'Sedgwick Ave Display', cursive;
-        
-    
+    text-align: center;
+    font-family: 'Jost', sans-serif;    
+    font-size: 1.2rem;
+     
 }
 
 .menu ul{
@@ -63,21 +53,27 @@ h1{
 
 .menu li{
     margin: 0.2rem 1rem;    
-    padding: 0.4rem;    
-    border: 0.1rem solid black;
-    border-radius: 0.8rem;
-    text-align: center;          
-    
+    padding: 0.2rem 0.5rem;  
+       
 }
 
 .menu li:hover{
-    background-color: #9DDE24;
+    
     transform: scale(1.2);
+    background-color: #1f331db9;
+    border-radius: 1rem;
+    
+
 }
 
 .menu a{
     text-decoration: none;
-    color: black;   
+    color: black;  
+    
+}
+
+.menu a:hover{
+    color: #b8ffb3;
     
 }
 
@@ -91,6 +87,14 @@ h1{
     font-family: 'Poppins', sans-serif;
     display: inline-block;    
     
+}
+
+.section img{
+    border: solid 0.1rem black;
+}
+
+.section div{
+    border-bottom: solid 0.1rem whitesmoke;
 }
 
 .section h2{
@@ -127,7 +131,7 @@ section div a:hover{
     display: inline-block;
     text-align: left;
     font-size: 1rem;
-    background-color:#abe244;
+    
 }
 
 .footer{
@@ -136,12 +140,13 @@ section div a:hover{
     justify-content: space-around;
     align-content: center;       
     font-size: 0.8rem;
-    padding: 1rem 0.6rem;
-    background-color: #084010;
+    padding: 1rem 0.6rem;    
     text-align: center;
-    color: #D5E5D7;
-    border: 0.1rem solid black;
+    color: #111111;
     font-family: 'Poppins', sans-serif;
+    background: rgb(122,232,110);
+    background: linear-gradient(180deg, rgba(122,232,110,0.9864320728291317) 0%, rgba(144,222,138,1) 35%, rgba(182,246,158,0.9724264705882353) 100%);
+
         
 }
 
@@ -163,20 +168,28 @@ footer div img{
 @media only screen and (max-width:600px){
 
     .header{
-        font-size: 75%;
+        font-size: 70%;
     }
 
     .menu{
-        font-size: 75%;
+        font-size: 70%;
     }
 
     .section{
-        font-size: 75%;
+        font-size: 70%;
+    }
+
+    .section img{
+        width: 50%;
+    }
+
+    .section a{
+        font-size: 70%;
     }
 
     
     .footer div h3, h4, h5{
-        font-size: 75%;
+        font-size: 70%;
     }   
 
 
@@ -199,6 +212,13 @@ footer div img{
 
 @media only screen and (max-width:360px){
 
+    .contenedor{
+        grid-template-areas: "header"
+                             "main"
+                             "main"
+                             "footer";
+    }
+
     .header{
         font-size: 50%;
     }
@@ -209,6 +229,14 @@ footer div img{
 
     .section{
         font-size: 50%;
+    }
+
+    .section a{
+        font-size: 50%;
+    }
+
+    .section img{
+        width: 15%;
     }
 
     .footer{

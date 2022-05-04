@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.contenedor .main .section div a, .contenedor .main .section div img, .contenedor .main .section div .video {
+.contenedor .main .section img, .contenedor .main .section button, .contenedor .main .section div a, .contenedor .main .section div img, .contenedor .main .section div .video {
   border: 0.1rem solid black;
   border-radius: 0.3rem;
   border-spacing: 0.01rem; }
@@ -24,6 +24,7 @@ body {
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 1.5rem; }
   .contenedor .main {
+    text-align: center;
     grid-area: main; }
     .contenedor .main .menu {
       padding: 0.4rem 0.6rem;
@@ -50,33 +51,54 @@ body {
             .contenedor .main .menu ul li a:hover {
               color: #b8ffb3; }
     .contenedor .main .section {
-      margin: 1.2rem;
-      padding: 1.2rem 1.8rem;
+      margin: 1.5rem;
+      padding: 1.5rem 2rem;
       text-align: center;
       font-size: 1.2rem;
       color: black;
       font-family: 'Poppins', sans-serif;
       display: inline-block; }
       .contenedor .main .section h2 {
-        padding: 1.2rem 1.2rem 3.1rem 1.2rem; }
-      .contenedor .main .section div h3 {
-        padding: 0.7rem 2.6rem; }
-      .contenedor .main .section div p {
-        padding: 1rem 3.1rem;
-        margin: 0.2rem 0.7rem; }
-      .contenedor .main .section div a {
+        padding: 3rem; }
+      .contenedor .main .section h3 {
+        padding: 3rem; }
+      .contenedor .main .section p {
+        padding: 3rem 4rem; }
+      .contenedor .main .section button {
         text-decoration: none;
         color: #9DDE24;
+        margin: 0.5rem;
         background-color: #084010;
         font-size: 1rem; }
-        .contenedor .main .section div a:hover {
+        .contenedor .main .section button:hover {
           background-color: #11691d;
           transform: scale(1.2);
           box-shadow: 0.2rem 0.2rem #084010; }
-      .contenedor .main .section div form {
-        display: inline-block;
-        text-align: left;
-        font-size: 1rem; }
+      .contenedor .main .section div {
+        border-bottom: solid 0.1rem black; }
+        .contenedor .main .section div ul li {
+          list-style: none;
+          padding: 1rem; }
+        .contenedor .main .section div h3 {
+          padding: 0.7rem 2.6rem;
+          padding-top: 3rem; }
+        .contenedor .main .section div p {
+          padding: 4rem;
+          margin: 0.2rem 0.7rem; }
+        .contenedor .main .section div a {
+          text-decoration: none;
+          color: #9DDE24;
+          margin: 00.5rem;
+          background-color: #084010;
+          font-size: 1rem; }
+          .contenedor .main .section div a:hover {
+            background-color: #11691d;
+            transform: scale(1.2);
+            box-shadow: 0.2rem 0.2rem #084010; }
+        .contenedor .main .section div form {
+          display: inline-block;
+          text-align: left;
+          font-size: 1rem; }
   .contenedor .footer {
     grid-area: footer;
     display: flex;

@@ -34,6 +34,7 @@ body{
         }
                         
     .main{
+        text-align: center;
         grid-area: main;
                         
         .menu{
@@ -44,7 +45,7 @@ body{
             text-align: center;
             font-family: 'Jost', sans-serif;    
             font-size: 1.2rem;
-                        
+                                    
             ul{
                 display: flex;
                 justify-content: center;
@@ -73,32 +74,69 @@ body{
             }
                             
         .section{
-            margin: 1.2rem;
-            padding: 1.2rem 1.8rem;    
-            text-align: center;        
+            margin: 1.5rem;
+            padding: 1.5rem 2rem;    
+            text-align: center;                  
             font-size: 1.2rem;
             color: black;
             font-family: 'Poppins', sans-serif;
             display: inline-block;
                                 
             h2{
-                padding: 1.2rem 1.2rem 3.1rem 1.2rem;            
+                padding: 3rem;            
             }
-                        
+
+            h3{
+                padding: 3rem;
+            }
+
+            p{
+                padding: 3rem 4rem;
+            }
+
+            img{
+                @extend %bordes;
+            }
+
+            button{
+                text-decoration: none;
+                    color: #9DDE24;
+                    margin: 0.5rem;
+                    @extend %bordes;
+                    background-color: #084010;
+                    font-size: 1rem;
+                    &:hover{
+                        background-color: #11691d;
+                        transform: scale(1.2);
+                        box-shadow: 0.2rem 0.2rem #084010;
+                    }
+            }
+                                   
             div{
+                border-bottom: solid 0.1rem black;
+
+                ul{
+                                        
+                    li{
+                        list-style: none;
+                        padding: 1rem;
+                    }
+                }
                         
                 h3{
                     padding: 0.7rem 2.6rem; 
+                    padding-top: 3rem;
                 }
                         
                 p{
-                    padding: 1rem 3.1rem;
+                    padding: 4rem;
                     margin: 0.2rem 0.7rem; 
                 }
                         
                 a{
                     text-decoration: none;
                     color: #9DDE24;
+                    margin: 00.5rem;
                     @extend %bordes;
                     background-color: #084010;
                     font-size: 1rem;

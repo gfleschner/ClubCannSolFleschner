@@ -15,41 +15,58 @@ body {
 .contenedor {
   height: 100%;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "header header" "menu menu" "main main" "main main" "footer footer"; }
   .contenedor .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     grid-area: header;
+    background: #7ae86e;
+    background: linear-gradient(180deg, rgba(122, 232, 110, 0.986432) 0%, #90de8a 35%, rgba(182, 246, 158, 0.972426) 100%);
+    border-bottom: solid 0.1rem whitesmoke;
     text-align: center;
-    padding: 1.2rem 1.9rem;
+    padding-top: 1.5rem;
+    padding: 1.5rem 1.9rem 0.1rem 1,9rem;
     color: black;
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 1.5rem; }
-  .contenedor .main {
-    text-align: center;
-    grid-area: main; }
-    .contenedor .main .menu {
+    font-family: 'Sedgwick Ave Display', cursive; }
+    .contenedor .header a {
+      text-decoration: none;
+      color: black; }
+      .contenedor .header a h1 {
+        transition: 2s;
+        font-size: 3rem; }
+        .contenedor .header a h1:hover {
+          transform: scale(1.1); }
+      .contenedor .header a h2 {
+        border-bottom: solid 0.1rem whitesmoke;
+        font-size: 2rem; }
+        .contenedor .header a h2:hover {
+          transform: scale(1.1); }
+    .contenedor .header .menu {
+      grid-area: menu;
       padding: 0.4rem 0.6rem;
-      position: sticky;
-      border-bottom: solid 0.1rem whitesmoke;
-      top: 0;
       text-align: center;
       font-family: 'Jost', sans-serif;
       font-size: 1.2rem; }
-      .contenedor .main .menu ul {
+      .contenedor .header .menu ul {
         display: flex;
         justify-content: center;
         list-style: none; }
-        .contenedor .main .menu ul li {
+        .contenedor .header .menu ul li {
           margin: 0.2rem 1rem;
           padding: 0.2rem 0.5rem; }
-          .contenedor .main .menu ul li:hover {
+          .contenedor .header .menu ul li:hover {
             transform: scale(1.2);
             background-color: #1f331db9;
             border-radius: 1rem; }
-          .contenedor .main .menu ul li a {
+          .contenedor .header .menu ul li a {
             text-decoration: none;
             color: black; }
-            .contenedor .main .menu ul li a:hover {
+            .contenedor .header .menu ul li a:hover {
               color: #b8ffb3; }
+  .contenedor .main {
+    text-align: center;
+    grid-area: main; }
     .contenedor .main .section {
       margin: 1.5rem;
       padding: 1.5rem 2rem;
@@ -64,6 +81,10 @@ body {
         padding: 3rem; }
       .contenedor .main .section p {
         padding: 3rem 4rem; }
+      .contenedor .main .section img {
+        transition: 1.5s; }
+        .contenedor .main .section img:hover {
+          transform: scale(1.1); }
       .contenedor .main .section button {
         text-decoration: none;
         color: #9DDE24;
@@ -125,7 +146,11 @@ body {
       font-size: 1rem; }
     .contenedor .footer div img {
       margin: 1.2rem 0.5rem;
-      border-radius: 50%; }
+      border-radius: 35%; }
+    .contenedor .footer div .redes {
+      transition: 1.1s; }
+      .contenedor .footer div .redes:hover {
+        transform: scale(1.2); }
 
 /* media queries */
 @media only screen and (max-width: 768px) {
@@ -136,7 +161,7 @@ body {
   .section {
     font-size: 70%; }
     .section img {
-      width: 35%; }
+      width: 70%; }
     .section a {
       font-size: 70%; }
     .section .video {
@@ -159,7 +184,7 @@ body {
     .section a {
       font-size: 50%; }
     .section img {
-      width: 25%; }
+      width: 50%; }
     .section .video {
       max-width: 50%;
       min-width: 10%; }
